@@ -5,9 +5,7 @@ Our project is aim to solve Traveling Salesman Problem by Genetic Algorithm. We 
 
 
 Team Member: Zinan Wang, Zhifei Lin
-
 Team Number: 506
-
 Language: Java
 
 
