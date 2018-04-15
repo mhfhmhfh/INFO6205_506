@@ -9,7 +9,9 @@ Team Number: 506<br>
 Language: Java
 
 
-
+Flow
+-----
+![](https://imgsa.baidu.com/forum/w%3D580/sign=ab5b6c78b499a9013b355b3e2d940a58/fc73f6bf6c81800aadb33962bd3533fa828b4737.jpg)
 
 
 Implmentation:
