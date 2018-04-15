@@ -26,6 +26,7 @@ public class Population
 			for(int i=0;i<NatureCondition.CITY_NUM;i++)
 				System.out.print(point.genes[i]+" ");
 			System.out.println(point.distance);
+                        System.out.println(point.fitness);
 			point=point.next;
 		}
 		System.out.println("------------------");

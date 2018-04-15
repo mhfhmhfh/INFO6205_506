@@ -15,7 +15,7 @@ public class IndividualNode
 	public float distance;
 	public float fitness;
 	public IndividualNode next;
-	public float rate;
+	float rate;
 	
 	IndividualNode()
 	{

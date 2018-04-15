@@ -11,11 +11,11 @@ package GA;
  */
 public class NatureCondition 
 {
-	static int CITY_NUM; 
-	static final int SPECIES_NUM=200;
-	static final int DEVELOP_NUM=100;
-	static final float pcl=0.6f,pch=0.95f;
-	static final float pm=0.4f;
+	public static int CITY_NUM; 
+	public static final int SPECIES_NUM=200;
+	public static final int DEVELOP_NUM=100;
+	public static final float pcl=0.2f,pch=0.95f;
+	public static final float pm=0.4f;
 	static final float[][] disMap;
 	static
         {
