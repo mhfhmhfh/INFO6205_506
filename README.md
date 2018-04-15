@@ -23,7 +23,7 @@ Implmentation:
 * Fitness function:
 
 * Sort function:
-
+  We use quick sort.
 * Evolution:
 
 
