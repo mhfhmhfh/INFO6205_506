@@ -16,12 +16,17 @@ Flow
 
 Implmentation:
 ------------
-· Gene code:
+* Gene code:
 
-· Gene expression:
+* Gene expression:
 
-· Fitness function:
+* Fitness function:
 
-· Sort function:
+* Sort function:
 
-· Evolution:
+* Evolution:
+
+
+=
+
+Detailed information is in our report.
