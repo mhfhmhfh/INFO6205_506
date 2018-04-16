@@ -18,7 +18,7 @@ Implmentation:
 ------------
 * Gene code:<br>
   Our gene is coded as the four DNA bases(A,T,C,G).<br>
-  We use 4 gene to show one genotye,such as [ATCG], [AGAA].
+  We use 4 gene to show one genotype,such as [ATCG], [AGAA].
 * Gene expression:<br>
   We use quatemary coding to show gene expression.<br>
   A→0， T→1， C→2, G→3.<br>
