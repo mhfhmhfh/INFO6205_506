@@ -20,12 +20,12 @@ Implmentation:
 
 * Gene expression:
 
-* Fitness function:
-  
+* Select function:
+  Select individuals with the highest fitness in the generation and copy them directly to the child generation. And those good individuals are also used to generate children.
 * Evolution:
   It include crossover and mutation. <br>
-  For crossover, we generate a random number and the child's chromosome is part chromosome od father plus part chromosme of mother according to the random number.
-  For mutation, we generate a random number and if the number less to the mutation factor, we swap two cities which are chosen randomly.
+  For crossover, we generate a random number and the child's chromosome is part chromosome od father plus part chromosme of mother according to the random number.<br>
+  For mutation, we swap two cities which are chosen randomly.
 
 ----
 
