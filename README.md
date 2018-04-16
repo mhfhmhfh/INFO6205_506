@@ -16,12 +16,18 @@ Flow
 
 Implmentation:
 ------------
-* Gene code:
-
-* Gene expression:
+* Gene code:<br>
+  Our gene is coded as the four DNA bases(A,T,C,G).<br>
+  We use 4 gene to show one genotye,such as [ATCG], [AGAA].
+* Gene expression:<br>
+  We use quatemary coding to show gene expression.<br?
+  A→0， T→1， C→2, G→3.<br>
+  For example:<br>
+  [ATCG,ATAA,AGAC,AGAG] → [0123,0100,0302,0303] → [27,16,50,51]
+  
 
 * Fitness function:<br>
-  We use the distance between two cities to show fitness. Of course the fitness is the inverse of the distance. And “coor.txt” is the initialization data of city positions.
+  We use the distance between two cities to show fitness. The fitness is the inverse of the sum of distance. Larger the fitness is, the better result we have.
 
 * Select function:<br>
   Select individuals with the highest fitness in the generation and copy them directly to the child generation. And those good individuals are also used to generate children.<br>
