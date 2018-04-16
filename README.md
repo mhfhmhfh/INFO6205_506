@@ -21,11 +21,11 @@ Implmentation:
 * Gene expression:
 
 * Fitness function:
-
-* Sort function:
-  We use quick sort.
+  
 * Evolution:
-
+  It include crossover and mutation. <br>
+  For crossover, we generate a random number and the child's chromosome is part chromosome od father plus part chromosme of mother according to the random number.
+  For mutation, we generate a random number and if the number less to the mutation factor, we swap two cities which are chosen randomly.
 
 ----
 
