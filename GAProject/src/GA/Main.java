@@ -6,6 +6,8 @@
 package GA;
 
 import Sort.Sort;
+import Visual.MyPanel;
+import javax.swing.JFrame;
 
 /**
  *
@@ -14,14 +16,13 @@ import Sort.Sort;
 public class Main {
 
     public static void main(String[] args) {
-        
-        GeneAlgorithm GA = new GeneAlgorithm();
-        
-        Population speciesList = new Population();
 
-        IndividualNode bestRate = GA.run(speciesList);
-
-        bestRate.printRate();
+        JFrame f = new JFrame();
+        f.setTitle("");
+        f.getContentPane().add(new MyPanel());
+        f.setSize(1000, 640);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setVisible(true);
     }
 
 }

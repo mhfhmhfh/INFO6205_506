@@ -8,7 +8,7 @@ public class GeneAlgorithm
     
         private static Logger log = Logger.getLogger(GeneAlgorithm.class.getName());
     
-	IndividualNode run(Population list)
+	public IndividualNode run(Population list)
 	{
                 log.info("Start sloving TSP problem...");
                 log.info("Start initalization of first generation");
@@ -23,7 +23,7 @@ public class GeneAlgorithm
 			
 			mutate(list);
                         
-                        list.traverse();
+                        //list.traverse();
                         
 		}
                 

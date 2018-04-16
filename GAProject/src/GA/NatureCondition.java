@@ -17,10 +17,7 @@ public class NatureCondition
 	public static final float pcl=0.2f,pch=0.95f;
 	public static final float pm=0.4f;
 	static final float[][] disMap;
-	static
-        {
-		
-		int[][] cityPosition={
+        public static int[][] cityPosition={
 				{1304,        2312},{3639,        1315},         
 				{4177,        2244},{3712,        1399},         	
 				{3488,        1535},{3326,        1556},         
@@ -37,7 +34,8 @@ public class NatureCondition
 				{2935,        3240},{3140,        3550},
 				{2545,        2357},{2778,        2826},
 				{2370,        2975}};
-		
+	static
+        {
 		
 		CITY_NUM=cityPosition.length;
 		disMap=new float[CITY_NUM][CITY_NUM];

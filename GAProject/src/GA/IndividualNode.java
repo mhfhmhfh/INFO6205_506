@@ -85,7 +85,7 @@ public class IndividualNode
 		return species;	
 	}
 	
-	void printRate()
+	public void printRate()
 	{
 		System.out.print("Shortest Path:");
 		for(int i=0;i<genes.length;i++){
