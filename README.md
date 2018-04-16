@@ -20,7 +20,7 @@ Implmentation:
   Our gene is coded as the four DNA bases(A,T,C,G).<br>
   We use 4 gene to show one genotye,such as [ATCG], [AGAA].
 * Gene expression:<br>
-  We use quatemary coding to show gene expression.<br?
+  We use quatemary coding to show gene expression.<br>
   A→0， T→1， C→2, G→3.<br>
   For example:<br>
   [ATCG,ATAA,AGAC,AGAG] → [0123,0100,0302,0303] → [27,16,50,51]
@@ -35,7 +35,8 @@ Implmentation:
   
 * Evolution:<br>
   It include crossover and mutation. <br>
-  For crossover, we generate a random number and the child's chromosome is part chromosome od father plus part chromosme of mother according to the random number.<br>
+  We use  linked list to store individuals, so it will reduce time when we do crossover and mutation.
+  For crossover, we generate a random number and the child's chromosome is part chromosome od father plus part chromosme of mother according to the random number.<br>
   For mutation, we swap two cities which are chosen randomly.
 
 ----
