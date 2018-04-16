@@ -10,20 +10,22 @@ public class GeneAlgorithm
     
 	IndividualNode run(Population list)
 	{
+                log.info("Start sloving TSP problem...");
+                log.info("Start initalization of first generation");
 		createBeginningSpecies(list);
 		
 		for(int i=1;i<=NatureCondition.DEVELOP_NUM;i++)
 		{
-                        
+                        log.info(i+" generation");
 			select(list);
 			
 			crossover(list);
 			
 			mutate(list);
                         
-		}	
-		
-                list.traverse();
+                        list.traverse();
+                        
+		}
                 
 		return getBest(list);
 	}
@@ -68,7 +70,7 @@ public class GeneAlgorithm
 	
 	public void select(Population list)
 	{			
-		//log.info("selection begin");
+		log.info("selection begin");
 		calRate(list);
 		
 		
@@ -131,14 +133,17 @@ public class GeneAlgorithm
 			
 		}
 		list.head=newPopulation.head;
-                //log.info("selection end....");
+                log.info("selection end....");
 	}
 	
 	public void crossover(Population list)
 	{
+            
+                
 		float rate=(float)Math.random();
 		if(rate > NatureCondition.pcl && rate < NatureCondition.pch)
-		{			
+		{		
+                        log.info("Start crossover evolution");
 			IndividualNode point=list.head.next;
 			Random rand=new Random();
 			int find=rand.nextInt(list.speciesNum);
@@ -175,9 +180,11 @@ public class GeneAlgorithm
 		IndividualNode point=list.head.next;
 		while(point != null)
 		{
+                        
 			float rate=(float)Math.random();
 			if(rate < NatureCondition.pm)
 			{
+                                //log.info("Mutation happened");
 				Random rand=new Random();
 				int left=rand.nextInt(NatureCondition.CITY_NUM);
 				int right=rand.nextInt(NatureCondition.CITY_NUM);
