@@ -31,4 +31,16 @@ public class Population
 		}
 		System.out.println("------------------");
 	}
+        
+        public float avgDistance(){
+            float sum = 0;
+            IndividualNode point=head.next;
+		while(point != null){
+                    point.calFitness();
+                    sum += point.distance;
+                    point = point.next;
+                }
+                
+            return sum/NatureCondition.SPECIES_NUM;
+        }
 }

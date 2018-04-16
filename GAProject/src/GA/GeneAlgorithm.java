@@ -28,7 +28,7 @@ public class GeneAlgorithm
 		return getBest(list);
 	}
 	
-	void createBeginningSpecies(Population list)
+	public void createBeginningSpecies(Population list)
 	{
 		int randomNum=(int)(NatureCondition.SPECIES_NUM);
 		for(int i=1;i<=randomNum;i++)
@@ -66,7 +66,7 @@ public class GeneAlgorithm
 	}
 	
 	
-	void select(Population list)
+	public void select(Population list)
 	{			
 		//log.info("selection begin");
 		calRate(list);
@@ -134,7 +134,7 @@ public class GeneAlgorithm
                 //log.info("selection end....");
 	}
 	
-	void crossover(Population list)
+	public void crossover(Population list)
 	{
 		float rate=(float)Math.random();
 		if(rate > NatureCondition.pcl && rate < NatureCondition.pch)
