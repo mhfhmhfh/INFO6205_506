@@ -35,7 +35,7 @@ Implmentation:
   
 * Evolution:<br>
   It include crossover and mutation. <br>
-  We use  linked list to store individuals, so it will reduce time when we do crossover and mutation.
+  We use  linked list to store individuals, so it will reduce time when we do crossover and mutation.<br>
   For crossover, we generate a random number and the child's chromosome is part chromosome od father plus part chromosme of mother according to the random number.<br>
   For mutation, we swap two cities which are chosen randomly.
 
