@@ -20,9 +20,9 @@ Implmentation:
 
 * Gene expression:
 
-* Select function:
+* Select function:<br>
   Select individuals with the highest fitness in the generation and copy them directly to the child generation. And those good individuals are also used to generate children.
-* Evolution:
+* Evolution:<br>
   It include crossover and mutation. <br>
   For crossover, we generate a random number and the child's chromosome is part chromosome od father plus part chromosme of mother according to the random number.<br>
   For mutation, we swap two cities which are chosen randomly.
