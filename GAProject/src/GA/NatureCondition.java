@@ -12,10 +12,10 @@ package GA;
 public class NatureCondition 
 {
 	public static int CITY_NUM; 
-	public static final int SPECIES_NUM=200;
+	public static final int SPECIES_NUM=1000;
 	public static final int DEVELOP_NUM=100;
 	public static final float pcl=0.2f,pch=0.95f;
-	public static final float pm=0.4f;
+	public static final float pm=0.2f;
 	static final float[][] disMap;
         public static int[][] cityPosition={
 				{1304,        2312},{3639,        1315},         

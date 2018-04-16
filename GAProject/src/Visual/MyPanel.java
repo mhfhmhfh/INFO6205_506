@@ -47,6 +47,10 @@ public class MyPanel extends JPanel {
             
             g.drawLine(x[index]/10, y[index]/10, x[index2]/10, y[index2]/10);
         }
+        
+        int first = Integer.parseInt(bestRate.genes[0])-1;
+        int last = Integer.parseInt(bestRate.genes[NatureCondition.CITY_NUM-1])-1;
+        g.drawLine(x[first]/10, y[first]/10, x[last]/10, y[last]/10);
     }
 
 }
