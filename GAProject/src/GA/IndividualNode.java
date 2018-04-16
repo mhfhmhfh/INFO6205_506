@@ -12,6 +12,8 @@ import java.util.Random;
 public class IndividualNode 
 {	
 	public String[] genes;
+        public String[] genecode;
+        
 	public float distance;
 	public float fitness;
 	public IndividualNode next;
@@ -20,6 +22,7 @@ public class IndividualNode
 	IndividualNode()
 	{
 		this.genes=new String[NatureCondition.CITY_NUM];
+                this.genecode = new String[NatureCondition.CITY_NUM];
 		this.fitness=0.0f;
 		this.distance=0.0f;
 		this.next=null;
@@ -43,8 +46,17 @@ public class IndividualNode
 			tmp=genes[num];
 			genes[num]=genes[j];
 			genes[j]=tmp;
-		}
+                }
+                
+                
 	}
+        
+        public void geneCode(){
+            for (int i = 0; i < genes.length; i++) {
+                    this.genecode[i] = Gene.encode(Integer.parseInt(genes[i]));
+                }
+            
+        }
 	
 	void calFitness()
 	{
@@ -76,9 +88,19 @@ public class IndividualNode
 	void printRate()
 	{
 		System.out.print("Shortest Path:");
-		for(int i=0;i<genes.length;i++)
-			System.out.print(genes[i]+"->");
+		for(int i=0;i<genes.length;i++){
+                    System.out.print(genes[i]+"->");
+                }
+			
 		System.out.print(genes[0]+"\n");
-		System.out.print("Shortest distance:" + distance);
+                
+                geneCode();
+                System.out.print("Gene Code: ");
+                for(int i=0;i<genes.length;i++){
+                    
+                    System.out.print(genecode[i]);
+                }
+                System.out.println("");
+		System.out.println("Shortest distance:" + distance);
 	}
 }
